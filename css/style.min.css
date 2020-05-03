@@ -153,6 +153,7 @@ header {
 }
 
 .label {
+  position: relative;
   width: 112px;
   height: 24px;
   background-color: #000000;
@@ -164,9 +165,16 @@ header {
   line-height: 24px;
   margin: 0 auto;
   text-align: center;
+  z-index: 2;
+}
+
+.label_white {
+  background-color: #fff;
+  color: #000;
 }
 
 .worker_title {
+  position: relative;
   text-align: center;
   color: #222222;
   font-size: 38px;
@@ -174,14 +182,25 @@ header {
   line-height: 48px;
   text-transform: uppercase;
   margin-top: 38px;
+  z-index: 2;
+}
+
+.worker_title_white {
+  color: white;
 }
 
 .subtitle {
+  position: relative;
   text-align: center;
   margin-top: 19px;
   color: #222222;
   font-size: 17px;
   font-weight: 400;
+  z-index: 2;
+}
+
+.subtitle_white {
+  color: white;
 }
 
 .worker_block {
@@ -301,5 +320,38 @@ header {
   margin: 0 auto;
   padding: 6px;
   cursor: pointer;
+}
+
+.car {
+  position: relative;
+  min-height: 896px;
+  padding: 57px 0 138px 0;
+  background: url("../img/content2/bg.png") center center/cover no-repeat;
+}
+
+.car img {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-top: 56px;
+  z-index: 2;
+}
+
+.car_desc {
+  text-align: center;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.car .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 499px;
+  width: 100%;
+  background-color: #070716;
+  z-index: 1;
 }
 /*# sourceMappingURL=style.min.css.map */
